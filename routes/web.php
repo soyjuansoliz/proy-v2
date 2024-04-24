@@ -32,7 +32,7 @@ Route::prefix('dashboard')->middleware('auth')->group(function () {
     Route::get('/contacts/{contact}/edit', [ContactController::class,'edit'])->name('contact.edit');
     Route::post('/contacts/{contact}', [ContactController::class,'update'])->name('contact.update');
     Route::delete('/contacts/{contact}', [ContactController::class,'destroy'])->name('contact.destroy');
-    ;
+    
 });
 
 
